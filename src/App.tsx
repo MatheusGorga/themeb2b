@@ -1,19 +1,23 @@
-import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import GlobalStyle from './styles/global';
 import { ThemeProvider } from 'styled-components';
 import b2b from './styles/themes/b2b';
 import Main from './pages/main';
+import Table from './pages/table';
 
 function App() {
   return (
-    <ThemeProvider theme={b2b}>
-      <>
+    <BrowserRouter>
+      <ThemeProvider theme={b2b}>
         <Header />
-        <Main />
         <GlobalStyle />
-      </>
-    </ThemeProvider>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/table' element={<Table />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

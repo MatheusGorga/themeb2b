@@ -42,6 +42,38 @@ export const ContainerDivText = styled.div`
   gap: 20px;
 `;
 
+export const DivSpinner = styled.div`
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: ${(props) => props.theme.palette.primary.main};
+  margin-left: -5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
+const ButtonSpinner = styled.div`
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: ${(props) => props.theme.palette.primary.main};
+  margin-left: -5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
 /* Typographic */
 
 export const Title = styled.h1`

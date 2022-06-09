@@ -11,7 +11,7 @@ export default createGlobalStyle`
 body{
   background: ${(props) => props.theme.palette.primary.light} ;
   font-size: 16px ;
-  color: #f8f8f8 ;
+  color: #000 ;
   
 }
 
