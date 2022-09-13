@@ -129,3 +129,27 @@ export const TextSmall = styled.small`
   display: flex;
   align-items: flex-start;
 `;
+
+
+export const DivLa = styled.div`
+width: 50px ;
+height: 50px ;
+background-color: ${(props) => props.theme.palette.text.fuchsia};
+
+
+
+`
+
+export const DivSe = styled.div`
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 3;
+background-color: ${(props) => props.theme.palette.text.primary};
+`
+
+export const DivSection = styled.div`
+
+display: grid ;
+grid-template-columns: repeat(2, 1fr);
+`

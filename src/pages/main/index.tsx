@@ -15,6 +15,9 @@ import {
   TextSmall,
   ContainerItem,
   DivSpinner,
+  DivLa,
+  DivSe,
+  DivSection,
 } from './styles';
 
 function Main() {
@@ -129,7 +132,41 @@ function Main() {
         </Container>
 
         <Container>
-          <ContainerDiv>Testes</ContainerDiv>
+          <ContainerDiv>
+            <DivSection>
+
+            <DivLa>
+            ola
+           </DivLa>
+           <DivLa>
+            ola
+           </DivLa> 
+           <DivLa>
+            ola
+           </DivLa>
+
+            <DivSe> 
+              ola
+            </DivSe>
+
+            <DivLa>
+            ola
+           </DivLa>
+           <DivLa>
+            ola
+           </DivLa>
+           <DivLa>
+            ola
+           </DivLa>
+
+
+            </DivSection>
+
+           
+
+
+
+          </ContainerDiv>
           <ContainerDiv>Testes</ContainerDiv>
         </Container>
         <Container>
